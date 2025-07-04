@@ -26,8 +26,15 @@ COPY app/ .
 RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env \
     if [ -f /etc/secrets/.env ]; then \
         cp /etc/secrets/.env .env; \
+        echo "✅ Secret .env file copied successfully"; \
     else \
-        echo "Warning: No .env secret file found"; \
+        echo "⚠️ Warning: No .env secret file found"; \
+        echo "🔍 Debug: Contents of /etc/secrets directory:"; \
+        ls -la /etc/secrets/ || echo "Directory /etc/secrets does not exist"; \
+        echo "🔍 Debug: Contents of /etc directory:"; \
+        ls -la /etc/ | grep secrets || echo "No secrets directory found in /etc"; \
+        echo "Creating empty .env file"; \
+        touch .env; \
     fi
 
 # Hacer el script ejecutable si existe
