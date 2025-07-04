@@ -8,3 +8,6 @@ app/.env
 **/__pycache__/
 
 app/__pycache__/
+.env.secrets
+*.secrets
+app/.env.secrets
