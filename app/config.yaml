@@ -1,0 +1,50 @@
+
+credentials:
+  usernames:
+    admin:
+      email: admin@example.com
+      name: Administrator
+      password: $2y$10$m3EHvUcKFnck3/eKm8.YHOhd5tmxXKGdqyKwG.labtAb7D7zmNkMi  # admin123
+      role: admin
+    
+    john_doe:
+      email: john.doe@example.com
+      name: John Doe
+      password: $2y$10$31COUDE1YSGYmnzoIjs5.Owu2RQsMOfauGxgT6C2xLVp070p2P1SS  # user123
+      role: power_user
+    
+    jane_smith:
+      email: jane.smith@example.com
+      name: Jane Smith
+      password: $2y$10$dyomD.n9ffu3de6HVjxdvekRiY72Wlg7ShHtSI.YIZYeB6KssKwN6  # view123
+      role: user
+    guest:
+      email:
+      name: Guest
+      password: $2y$10$eW5Z1z3Q8b
+      role: guest
+
+cookie:
+  name: banking_rates_auth_cookie
+  key: banking_rates_super_secret_signature_key_2024
+  expiry_days: 30
+
+role_permissions:
+  admin:
+    - view_data
+    - download_data
+    - create_custom_rates
+    - view_logs
+    - manage_users
+    - export_all_data
+  
+  power_user:
+    - view_data
+    - download_data
+    - create_custom_rates
+    - export_data
+  
+  user:
+    -
+  guest:
+    -

@@ -1,0 +1,5 @@
+timestamp,username,event,visit_count
+2025-06-09 14:10:50,jdoe,login,1
+2025-06-09 14:15:05,jdoe,login,1
+2025-06-09 14:15:21,mjane,login,2
+2025-06-23 19:34:09,jdoe,login,1

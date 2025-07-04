@@ -1,0 +1,29 @@
+- CB#3 FHLB Support (Exported as excel, no API)
+    - All rates
+
+-  Add the following CME rates (FED RESERVE - API)
+    MVB#1:
+    - ✅ WSJ PRIME(Daily)
+    - ✅ 5 Year treasury Rate CMT (Monthly) MVB & CB#4
+    - ✅ 1 Year treasury Rate CMT (Monthly)
+    - ✅ 3 Year treasury Rate CMT (Monthly) MVB & CB#4
+    - ✅ 10 Year treasury Rate CMT (Monthly)
+    - ✅ 7 Year treasury Rate CMT (Monthly)
+    - ✅ 2 Year treasury Rate CMT (Monthly)
+
+     ------ License Required -------
+    - CME TERM SOFR %1 Month (Monthly)
+    - CME TERM SOFR %3 Month (Monthly)
+    - CME TERM SOFR %6 Month (Monthly)
+
+        25USD/MONTH
+        https://dataservices.cmegroup.com/pages/CME-Data-Via-API
+
+    CB#4:
+    - ✅ SOFR
+    - FHLB: comunity advance rate (5Y)
+
+
+
+FHLB is only available as excel export, therefore we need to scrape (Website or document).
+CME Group has a paid API. We can pay or scrape the website.
