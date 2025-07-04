@@ -23,4 +23,4 @@ services:
 
 secrets:
   env_secrets:
-    file: ./.env.secrets
+    file: ./.env
